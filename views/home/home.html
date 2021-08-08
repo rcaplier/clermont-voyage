@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <title>Clermont voyage</title>
+</head>
+
+<body style="background-color:gainsboro">
+
+<div class="container-fluid">
+
+    <!-- HEADER CONTENT -->
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="my-5">Clermont voyage</h1>
+            <span class="btn btn-success mb-3" id="newTravelOfferBtn">Ajouter une offre</span>
+        </div>
+    </div>
+
+    <!-- MODALS -->
+    <div class="container-fluid">
+        <div class="modal fade" id="modalInfo">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Clermont voyage</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary mx-auto" data-bs-dismiss="modal" type="button">Fermer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+    <div class="row mb-5" id="content">
+        <!--        CARD HTML TEMPLATE -->
+<!--        <div class="col-11 mx-auto card shadow py-3 px-3 mb-3">-->
+<!--            <div class="row">-->
+<!--                <div class="col-6 text-left">-->
+<!--                    <h5 class="px-2" id="title"></h5>-->
+<!--                </div>-->
+<!--                <div class="col-6 ">-->
+<!--                    <h5 class="lead text-end px-2" id="destination"></h5>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row mt-2">-->
+<!--                <div class="col-7">-->
+<!--                    <div id="img">-->
+<!--                        <img class="img-fluid rounded" src="../../assets/img/bali.jpeg">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-5">-->
+<!--                    <div class="row mt-2">-->
+<!--                        <div class="col-7">-->
+<!--                            <div class="lead pt-2 border-top" id="shortDesc">-->
+
+<!--                            </div>-->
+<!--                            <div class="lead fw-bold mt-3">-->
+<!--                                <span>Les plus : </span>-->
+<!--                                <div class="lead" id="advantages">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-5">-->
+<!--                            <div class="lead text-danger display-5 text-end px-2" id="prix">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+        <div class="row border-top">
+            <p></p>
+        </div>
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+
+</div>
+
+</div>
+
+<script>
+    window.controllers.loadController('home');
+</script>
+</body>
+</html>

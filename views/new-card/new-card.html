@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <title>Clermont voyage</title>
+</head>
+
+<body style="background-color:gainsboro">
+
+<div class="container-fluid">
+
+    <!-- HEADER CONTENT -->
+    <div class="row">
+        <div class="col text-center">
+            <h3 class="my-5">Nouvelle offre</h3>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Clermont voyage</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center text-success">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form id="newOfferForm">
+            <div class="row mb-3">
+                <div class="col">
+                    <input class="form-control" id="titleOffer" placeholder="Titre de l'offre" type="text">
+                </div>
+                <div class="col">
+                    <input class="form-control" id="priceOffer" placeholder="Prix en euro" type="text">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <input class="form-control" id="destinationOffer" placeholder="Destination" type="text">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <input class="form-control" id="shortDescription" placeholder="Description courte de l'offre"
+                           type="text"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <input class="form-control" id="longDescriptionOffer" placeholder="Description longue de l'offre"
+                           type="text"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <input class="form-control" id="firstAdvantageOffer" placeholder="Le plus #1 de l'offre"
+                           type="text"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <input class="form-control" id="secondAdvantageOffer" placeholder="Le plus #2 de l'offre"
+                           type="text"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <input class="form-control" id="thirdAdvantageOffer" placeholder="Le plus #3 de l'offre"
+                           type="text"></div>
+            </div>
+            <div class="row mb-3 text-center">
+                <div class="col">
+                    <button id="addNewOfferButton" class="btn btn-primary" type="submit">Ajouter cette offre</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+
+<script>
+    window.controllers.loadController('new-card');
+</script>
+
+</body>
+</html>

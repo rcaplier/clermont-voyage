@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="script-src 'self' 'unsafe-inline';" http-equiv="Content-Security-Policy">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <title>Clermont voyage</title>
+</head>
+
+<body style="background-color:gainsboro">
+
+<div class="container-fluid">
+
+    <!-- HEADER CONTENT -->
+    <div class="row">
+        <div class="col text-center">
+            <h3 class="my-5">Vue détaillée</h3>
+        </div>
+    </div>
+
+    <!-- MODALS -->
+    <div class="container-fluid">
+        <div class="modal fade" id="modalInfo">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Clermont voyage</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary mx-auto" data-bs-dismiss="modal" type="button">Fermer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalDelete">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Clermont voyage</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            Êtes vous sûr de vouloir supprimer cette offre ?
+                        </div>
+                        <div class="modal-footer text-center">
+                            <button id="deleteCardBtnYes" class="btn btn-danger mx-auto" data-bs-dismiss="modal" type="button">Oui</button>
+                            <button class="btn btn-secondary mx-auto" data-bs-dismiss="modal" type="button">Non</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="row mb-3" id="content">
+        </div>
+
+        <!--   FOOTER CONTENT     -->
+        <div class="row">
+            <div class="col text-center">
+                <span class="btn btn-danger" id="deleteTravelOfferBtn">Supprimer l'offre</span>
+            </div>
+            <div class="col text-center">
+                <span class="btn btn-warning" id="editTravelOfferBtn">Editer l'offre</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+    window.controllers.loadController('detailed-card');
+</script>
+
+</body>
+</html>
